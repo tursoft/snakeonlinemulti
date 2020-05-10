@@ -26,7 +26,7 @@ jobs:
       - name: Angular Compile
         run: npm run build
 
-      - name: Copy Helm Charts
+      - name: Copy Helm Charts 
         run: mkdir ./dist/charts && cp -R ./charts/*.* ./dist/charts
 
       - name: Debug - List folder content
