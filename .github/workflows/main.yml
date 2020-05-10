@@ -1,0 +1,51 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: install Node (v12)
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          
+      - name: Install and Build Dependencies
+        run: npm install
+          
+      - name: Angular Compile
+        run: npm run build
+
+      - name: Copy Helm Charts
+        run: mkdir ./dist/charts && cp -R ./charts/*.* ./dist/charts
+
+      # - name: Package Helm Charts
+      #   uses: dave-mcconnell/helm-gh-pages-microservices@master
+      #   with:
+      #     access-token: ${{ secrets.GITHUB_TOKEN }}
+      #     source-charts-folder: 'charts'
+      #     destination-repo: tursoft/snake-online
+
+      # - name: Package Helm Charts
+      #   uses: flydiverny/helm-package-action@master
+      #   args: ./charts
+
+      - name: Debug - List folder content
+        run: ls -la ./dist && ls -la ./dist/charts && cat ./dist/charts/index.yaml
+
+      - name: Deploy to Git Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:          
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist

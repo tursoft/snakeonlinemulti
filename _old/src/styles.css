@@ -1,0 +1,33 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+a, a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.author-container {
+    color: white;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.author {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+/* #game {
+    border: 1px solid gray;
+} */
