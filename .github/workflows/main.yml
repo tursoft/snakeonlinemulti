@@ -29,7 +29,7 @@ jobs:
       - name: Copy Helm Charts 
         run: mkdir ./dist/snakeonlinemulti/charts && cp -R ./charts/*.* ./dist/snakeonlinemulti/charts
 
-      - name: Debug - List folder content
+      - name: Debug - List Folder Content
         run: ls -la ./dist/snakeonlinemulti && ls -la ./dist/snakeonlinemulti/charts && cat ./dist/snakeonlinemulti/charts/index.yaml
 
       - name: Deploy to Git Pages 🚀
