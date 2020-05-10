@@ -29,17 +29,6 @@ jobs:
       - name: Copy Helm Charts
         run: mkdir ./dist/charts && cp -R ./charts/*.* ./dist/charts
 
-      # - name: Package Helm Charts
-      #   uses: dave-mcconnell/helm-gh-pages-microservices@master
-      #   with:
-      #     access-token: ${{ secrets.GITHUB_TOKEN }}
-      #     source-charts-folder: 'charts'
-      #     destination-repo: tursoft/snake-online
-
-      # - name: Package Helm Charts
-      #   uses: flydiverny/helm-package-action@master
-      #   args: ./charts
-
       - name: Debug - List folder content
         run: ls -la ./dist && ls -la ./dist/charts && cat ./dist/charts/index.yaml
 
