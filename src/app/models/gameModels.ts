@@ -7,6 +7,7 @@ export enum GameStatusEnum {
 
 export interface GameInfo {
     gameId: string;
+    gameName: string;
     status: GameStatusEnum;
     startDate: Date;
     endDate: Date | null;
@@ -23,8 +24,8 @@ export interface UserInfo {
 
 export interface UserGameInfo {
     userId: string;
-    head: Box;
-    boxes: Box[];
+    head: BoxInfo;
+    boxes: BoxInfo[];
     lives: number;
     score: number;
 }
@@ -36,7 +37,7 @@ export interface BoxInfo {
 }
 
 export interface TargetBoxInfo {
-    box: Box;
+    box: BoxInfo;
     score: number;
 }
 

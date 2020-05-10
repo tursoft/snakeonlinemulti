@@ -1,0 +1,15 @@
+<h2 style="text-align: center;">Join</h2>
+<app-busy *ngIf="busyIndicator.isBusy">{{busyIndicator.busyText}}</app-busy>
+<mat-nav-list style="width: 350px;">
+    <ng-container *ngFor="let game of games">
+        <mat-list-item>
+            <a matLine [routerLink]="['/play', game.gameId]" style="vertical-align: middle;">
+                <mat-icon>games</mat-icon> {{game.gameName}}
+                <!-- <mat-chip-list aria-label="Fish selection">
+                    <mat-chip *ngFor="let user of game.users">{{user.username}}</mat-chip>
+                </mat-chip-list> -->
+            </a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </ng-container>    
+</mat-nav-list>
