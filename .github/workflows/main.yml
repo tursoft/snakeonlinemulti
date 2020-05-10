@@ -27,14 +27,14 @@ jobs:
         run: npm run build
 
       - name: Copy Helm Charts 
-        run: mkdir ./dist/charts && cp -R ./charts/*.* ./dist/charts
+        run: mkdir ./dist/snakeonlinemulti/charts && cp -R ./charts/*.* ./dist/snakeonlinemulti/charts
 
       - name: Debug - List folder content
-        run: ls -la ./dist && ls -la ./dist/charts && cat ./dist/charts/index.yaml
+        run: ls -la ./dist/snakeonlinemulti && ls -la ./dist/snakeonlinemulti/charts && cat ./dist/snakeonlinemulti/charts/index.yaml
 
       - name: Deploy to Git Pages 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:          
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: dist/snakeonlinemulti
