@@ -13,8 +13,9 @@ Simple version of classical snake game that was popular in nokia phones in 2000s
 * https://tursoft.github.io/snakeonlinemulti/
 
 # Technologies (app)
-* Typescript, Javascript
-* html, css
+* Angular (8+)
+* Typescript
+* Javascript, html, css
 
 # Technologies (deployment)
 * [hastatic](https://github.com/abhin4v/hastatic)
@@ -33,22 +34,13 @@ Simple version of classical snake game that was popular in nokia phones in 2000s
 * VSCode Extension: Debugger for Chrome
 * Modern Browser such as Chrome
 
-# Build
+# Build & Debug
 * Execute `npm i`
-* Execute `npm run build`
-* Open browser and visit file `./index.html`
-
-# Run
-* Start on VSCode (F5)
-* Browser will automatically opened
-
-# Debug
-* Execute tsc:watch task by ctrl+p and run-task
-* or on terminal, execute `tsc -watch`
+* Execute `ng serve`
 * Start on VSCode (Ctrl+F5)
 * Browser will automatically opened
-* Make your change and tsc will re-generate js files automatically
-* Refresh browser to check changes
+* http://localhost:4200
+
 
 # Docker Build Commands
 
@@ -87,9 +79,9 @@ Installing Helm Chart (remote)
 
 
 # Roadmap
+* Multiplayer mode (over websockets / firebase)
 * Developing test scripts
 * Improving game logic (levels, speed, lifes etc)
-* Multiplayer mode (over websockets)
 * Leadership board
 * Save & Resume support
 * Challenges
