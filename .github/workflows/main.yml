@@ -21,22 +21,22 @@ jobs:
           node-version: 12
           
       - name: Install and Build Dependencies
-        run: cd ./frontend && |
+        run: cd ./frontend && \
              npm install
           
       - name: Angular Compile
-        run: cd ./frontend && |
+        run: cd ./frontend && \
              npm run build
 
       - name: Copy Helm Charts 
-        run: mv ./frontend/dist ./frontend-dist && |
-             mkdir ./frontend-dist/charts && |
+        run: mv ./frontend/dist ./frontend-dist && \
+             mkdir ./frontend-dist/charts && \
              cp -R ./charts/*.* ./frontend-dist/charts
 
       - name: Debug - List Folder Content
-        run: cd ./frontend-dist && |
-             ls -la ./dist && |
-             ls -la ./frontend-dist/charts && |
+        run: cd ./frontend-dist && \
+             ls -la ./dist && \
+             ls -la ./frontend-dist/charts && \
              cat ./dist/charts/index.yaml
 
       - name: Deploy to Git Pages 🚀
