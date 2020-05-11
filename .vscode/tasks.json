@@ -14,12 +14,12 @@
 		    "type": "shell",
 		    "problemMatcher": "$tsc",
         "command": "\"start npm run test\"",
-	  },
-	  {
-        "label": "nfrontend-e2e",
-		    "type": "shell",
-		    "problemMatcher": "$tsc",
-        "command": "\"start npm run e2e\"",
+      },
+      {
+          "label": "nfrontend-e2e",
+          "type": "shell",
+          "problemMatcher": "$tsc",
+          "command": "\"start npm run e2e\"",
       }	  
-    ]
-  }
+  ]
+}

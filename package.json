@@ -1,0 +1,23 @@
+{
+  "name": "snakeonlinemulti",
+  "version": "1.0.0",
+  "description": "Simple snake game using html Canvas",
+  "repository": "github:tursoft/snakeonlinemulti",
+  "scripts": {
+    "frontend": "cd ./frontend & npm run start",
+    "backend": "cd ./backend & npm run start",
+    "all": "cd ./frontend & npm run start; cd ./backend & npm run start",
+    "helm": "helm package ./charts/snakeonlinemulti -d ./charts",
+    "helm-install": "helm install snakeonlinemulti ./charts/snakeonlinemulti-1.0.0.tgz"
+  },
+  "author": "Muhammet TURŞAK <tursoft@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "i": "^0.3.6",
+    "npm": "^6.14.5"
+  },
+  "devDependencies": {
+    "@types/ts-nameof": "^4.2.1",
+    "ts-nameof": "^4.2.2"
+  }
+}

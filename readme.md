@@ -17,6 +17,7 @@ Simple version of classical snake game that was popular in nokia phones in 2000s
 * Typescript
 * Javascript, html, css
 * Firebase
+* Colyseus (nodejs game server)
 
 # Technologies (deployment)
 * [hastatic](https://github.com/abhin4v/hastatic)

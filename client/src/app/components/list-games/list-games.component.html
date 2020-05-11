@@ -1,0 +1,26 @@
+<h2 style="text-align: center;">Join</h2>
+<app-busy *ngIf="busyIndicator.isBusy">{{busyIndicator.busyText}}</app-busy>
+
+<div style="width: 350px;">
+    <!-- search box //-->
+    <form style="width: 100%">  
+        <mat-form-field>
+        <input matInput placeholder="Search Game" [(ngModel)]="searchText">
+        </mat-form-field>
+    </form>  
+
+    <!-- list //-->
+    <mat-nav-list style="width: 100%">
+        <ng-container *ngFor="let game of games">
+            <mat-list-item>
+                <a matLine [routerLink]="['/play', game.roomId]" style="vertical-align: middle;">
+                    <mat-icon>games</mat-icon> {{game.roomId}}
+                    <!-- <mat-chip-list aria-label="Fish selection">
+                        <mat-chip *ngFor="let user of game.users">{{user.username}}</mat-chip>
+                    </mat-chip-list> -->
+                </a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </ng-container>    
+    </mat-nav-list>
+</div>
