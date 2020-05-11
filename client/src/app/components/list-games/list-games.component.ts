@@ -36,7 +36,7 @@ export class ListGamesComponent extends BaseComponent implements OnInit {
     });
   }
 
-  join(gameId: string): Promise<any> {
+  join(gameId: string = ''): Promise<any> {
     if (gameId == null || gameId == undefined || gameId == '') {
       gameId = this.searchText;
     }
