@@ -27,7 +27,7 @@ jobs:
         run: cd ./frontend && npm run build
 
       - name: Copy Helm Charts 
-        run: cd ./frontend && mkdir ./dist/charts && cp -R ./charts/*.* ./dist/charts
+        run: mkdir ./dist/charts && cp -R ./charts/*.* ./dist/charts
 
       - name: Debug - List Folder Content
         run: cd ./frontend && ls -la ./dist && ls -la ./dist/charts && cat ./dist/charts/index.yaml
