@@ -16,6 +16,7 @@ Simple version of classical snake game that was popular in nokia phones in 2000s
 * Angular (8+)
 * Typescript
 * Javascript, html, css
+* Firebase
 
 # Technologies (deployment)
 * [hastatic](https://github.com/abhin4v/hastatic)

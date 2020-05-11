@@ -21,7 +21,7 @@ jobs:
           node-version: 12
           
       - name: Install and Build Dependencies
-        run: npm install
+        run: cd ./frontend/ && npm install
           
       - name: Angular Compile
         run: npm run build
@@ -37,4 +37,4 @@ jobs:
         with:          
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: frontend/dist

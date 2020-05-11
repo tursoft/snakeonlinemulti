@@ -12,6 +12,7 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { NgMaterialComponents } from './app.module.ngmaterial';
 import { BaseComponent } from './components/base/base.component';
 import { BusyComponent } from './components/busy/busy.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [

@@ -2,23 +2,23 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "ng-serve",
-		"type": "npm",
-		"problemMatcher": "$tsc",
-		// "isBackground": true,
-		"script": "start"
+        "label": "frontend-serve",
+		    "type": "npm",
+		    "problemMatcher": "$tsc",
+		    // "isBackground": true,
+		    "script": "start"
         // "command": "\"start npm run start\""
       },
       {
-        "label": "ng-test",
-		"type": "shell",
-		"problemMatcher": "$tsc",
+        "label": "frontend-test",
+		    "type": "shell",
+		    "problemMatcher": "$tsc",
         "command": "\"start npm run test\"",
 	  },
 	  {
-        "label": "ng-e2e",
-		"type": "shell",
-		"problemMatcher": "$tsc",
+        "label": "nfrontend-e2e",
+		    "type": "shell",
+		    "problemMatcher": "$tsc",
         "command": "\"start npm run e2e\"",
       }	  
     ]
