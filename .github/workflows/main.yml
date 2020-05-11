@@ -39,7 +39,7 @@ jobs:
       - name: Debug - List Folder Content
         run: |
              cd ./frontend-dist
-             ls -la ./dist
+             ls -la ./frontend-dist
              ls -la ./frontend-dist/charts
              cat ./dist/charts/index.yaml
 
