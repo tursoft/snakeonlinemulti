@@ -13,9 +13,9 @@ const routes: Routes = [
   { path: 'join', component: ListGamesComponent, data: { title: 'Join', template: 'empty' }},
   { path: 'error', component: ErrorPageComponent, data: { title: 'Error', template: 'empty' }},
 
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent, pathMatch: 'full' }
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'home', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
