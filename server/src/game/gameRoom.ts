@@ -13,6 +13,8 @@ export class GameRoom extends Room<GameState> {
   dispatcher = new Dispatcher(this);
   
   onCreate (options: any) {
+
+    console.log("onCreate");
     // initialize empty room state
     this.setState(new GameState());
 
@@ -39,6 +41,7 @@ export class GameRoom extends Room<GameState> {
   }
 
   onDispose() {
+    console.log("onDispose");
   }
 
   dispatch<TCommand extends Command<GameState, CommandArg<TData>>, TData>(client: Client, cmd: TCommand, data: TData) {    

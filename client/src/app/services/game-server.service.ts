@@ -14,24 +14,27 @@ export class GameServerService {
   getClient() {
     if (this.client == null) {
       this.client = new Client(environment.serverUrl);
-      console.log('client connected!');
+      console.log('client connected! client: ', this.client);
     }
 
     return this.client;
   }
 
-  getGames(searchName: string): Promise<RoomAvailable<any>[]> {
+  getGames(searchTerm: string): Promise<RoomAvailable<any>[]> {
     const client = this.getClient();
-    return client.getAvailableRooms(searchName);
+    console.log('getGames! searchName: ', searchTerm);
+    return client.getAvailableRooms(searchTerm);
   }
 
   createGame(gameName: string): Promise<Room<GameInfo>> {
     const client = this.getClient();
-    return client.join(gameName);
+    console.log('createGame! searchName: ', gameName);
+    return client.joinOrCreate(gameName);
   }
 
   joinGame(gameName: string): Promise<Room<GameInfo>> {
     const client = this.getClient();
+    console.log('joinGame! searchName: ', gameName);
     return client.joinById<GameInfo>(gameName);
   }
 }

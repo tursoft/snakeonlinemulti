@@ -35,4 +35,21 @@ export class ListGamesComponent extends BaseComponent implements OnInit {
       e => this.handleError(e, 'loadData', reject));
     });
   }
+
+  join(gameId: string): Promise<any> {
+    if (gameId == null || gameId == undefined || gameId == '') {
+      gameId = this.searchText;
+    }
+
+    this.setBusy('Joinning, please wait...');
+    return new Promise<any>((resolve, reject) => {
+        this.context.router.navigate(['/play', gameId]);
+        // this.context.gameServerService.createGame(this.searchText).then(game => {
+        //   this.games = games;
+        //   this.endBusy();
+        //   resolve();
+      // },
+      // e => this.handleError(e, 'loadData', reject));
+    });
+  }
 }

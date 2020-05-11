@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import { Server } from "colyseus";
 import { monitor } from "@colyseus/monitor";
+import { matchMaker } from "colyseus"
 // import socialRoutes from "@colyseus/social/express"
 
 import { GameRoom } from "./game/gameRoom";
@@ -20,6 +21,7 @@ const gameServer = new Server({
 
 // register your room handlers
 gameServer.define('gameRoom', GameRoom);
+// matchMaker.createRoom("gameRoom", { /* options */ });
 
 /**
  * Register @colyseus/social routes

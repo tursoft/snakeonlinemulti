@@ -5,8 +5,9 @@
     <!-- search box //-->
     <form style="width: 100%">  
         <mat-form-field>
-        <input matInput placeholder="Search Game" [(ngModel)]="searchText">
+            <input matInput placeholder="Search Game" [(ngModel)]="searchText" [ngModelOptions]="{ standalone: true }">
         </mat-form-field>
+        <button mat-button color="primary" (click)="join()">Create New</button>
     </form>  
 
     <!-- list //-->
