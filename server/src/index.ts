@@ -12,7 +12,7 @@ const port = Number(process.env.PORT || 2567);
 const app = express()
 
 app.use(cors({
-  origin: ['localhost:4200', 'https://tursoft.github.io']
+  origin: ['localhost:4200', 'https://tursoft.github.io', 'http://snakeonlinemulti.herokuapp.com']
 }));
 
 // app.use(express.static('views'))

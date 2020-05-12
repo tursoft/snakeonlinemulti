@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  serverUrl: 'ws://snakeonlinemulti.herokuapp.com',
-  serverMonitorUrl: 'https://snakeonlinemulti.herokuapp.com/stats'
+  serverUrl: 'ws://snakeonlinemulti-server.herokuapp.com',
+  serverMonitorUrl: 'https://snakeonlinemulti-server.herokuapp.com/stats'
 };
