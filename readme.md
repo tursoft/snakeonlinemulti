@@ -84,7 +84,8 @@ Installing Helm Chart (remote)
 * Enable Automatic deploys
 * Set PROJECT_PATH in Settings\Config Vars to `server`
 * Add `heroku/nodejs` in Buildpacks
-* Set Dyno command to `cd server && npm start`
+* Add `https://github.com/timanovsky/subdir-heroku-buildpack` in Buildpacks
+* Set Dyno command to `npm start`
 * Push your changes
 * Monitor activity section for build logs
 
