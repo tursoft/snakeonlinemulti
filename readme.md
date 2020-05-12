@@ -12,7 +12,7 @@ Simple version of classical snake game that was popular in nokia phones in 2000s
 # Deployments ()
 * Client: https://tursoft.github.io/snakeonlinemulti/
 * Server: https://snakeonlinemulti.herokuapp.com
-* Server (stats): https://snakeonlinemulti.herokuapp.com/colyseus
+* Server (stats): https://snakeonlinemulti.herokuapp.com/stats
 
 # Technologies (app)
 * Angular (8+)
