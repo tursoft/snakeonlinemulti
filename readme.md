@@ -9,8 +9,10 @@ Simple version of classical snake game that was popular in nokia phones in 2000s
 # Status
 ![Build and Deploy](https://github.com/tursoft/snakeonlinemulti/workflows/Build%20and%20Deploy/badge.svg?branch=master)
 
-# Demo Deployment
-* https://tursoft.github.io/snakeonlinemulti/
+# Deployments ()
+* Client: https://tursoft.github.io/snakeonlinemulti/
+* Server: https://snakeonlinemulti.herokuapp.com
+* Server (stats): https://snakeonlinemulti.herokuapp.com/colyseus
 
 # Technologies (app)
 * Angular (8+)
@@ -74,6 +76,17 @@ Installing Helm Chart (remote)
 * `helm install snakeonlinemulti snakeonlinemulti/snakeonlinemulti`
 * `helm install snakeonlinemulti --set service.port=33000 snakeonlinemulti/snakeonlinemulti`
 * https://tursoft.github.io/snakeonlinemulti/charts
+
+
+# Heroku Settings
+* Create a new project
+* Connect github project to heroku project
+* Enable Automatic deploys
+* Set PROJECT_PATH in Settings\Config Vars to `server`
+* Add `heroku/nodejs` in Buildpacks
+* Set Dyno command to `cd server && npm start`
+* Push your changes
+* Monitor activity section for build logs
 
 # Screenshoot
 ![Screenshoot][screenshoot1]

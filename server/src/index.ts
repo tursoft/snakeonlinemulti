@@ -26,6 +26,7 @@ const gameServer = new Server({
 gameServer.define('gameRoom', GameRoom);
 // matchMaker.createRoom("gameRoom", { /* options */ });
 
+
 /**
  * Register @colyseus/social routes
  *
@@ -38,4 +39,4 @@ gameServer.define('gameRoom', GameRoom);
 app.use("/colyseus", monitor());
 
 gameServer.listen(port);
-console.log(`Listening SnakeOnlineMulti GameServer on ws://localhost:${ port }`)
+console.log(`Listening Snake OnlineMulti Game Server on ws://localhost:${ port }`)
