@@ -127,6 +127,7 @@ Installing Helm Chart (remote)
 * server: improve serve index.html (add logo, add client link from variables - use express ejs)
 * server: persist game state and continue after deployment
 
+
 # Roadmap
 * Multiplayer mode (over websockets / firebase)
 * Developing test scripts
