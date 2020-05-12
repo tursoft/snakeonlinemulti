@@ -122,6 +122,7 @@ Installing Helm Chart (remote)
 * add google analytics
 * client & server: add log integration
 * client & server: metrics integration
+* server: improve serve index.html (add logo, add client link from variables - use express ejs)
 
 # Roadmap
 * Multiplayer mode (over websockets / firebase)
