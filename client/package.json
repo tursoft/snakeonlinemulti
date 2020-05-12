@@ -10,12 +10,12 @@
     "ng": "ng",
     "start": "http-server",
     "serve": "ng serve",
-    "build": "ng build --prod --base-href /snakeonlinemulti --deploy-url /snakeonlinemulti/",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "preinstall": "npm install -g http-server",
-    "postinstall": "ng build --prod && mv dist/* ."
+    "postinstall": "mv dist/* ."
   },
   "private": true,
   "dependencies": {
