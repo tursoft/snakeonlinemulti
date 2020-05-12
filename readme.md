@@ -106,6 +106,7 @@ Installing Helm Chart (remote)
 
 
 # Todos
+* client: cleanup deployment folder on heroku (on postbuild)
 * create seperate release branch
 * create seperate development branch
 * configure pull request mechanism
