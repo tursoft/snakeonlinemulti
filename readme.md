@@ -107,6 +107,8 @@ Installing Helm Chart (remote)
 * Add tests for client and server layers
 * Configure auto execution of tests on deployments
 * Add "goals" section to summarize goal of this repository
+* Add tagging-versionning support
+
 
 # Roadmap
 * Multiplayer mode (over websockets / firebase)
