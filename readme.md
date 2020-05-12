@@ -85,6 +85,7 @@ Installing Helm Chart (remote)
 * Set PROJECT_PATH in Settings\Config Vars to `server`
 * Add `https://github.com/niteoweb/heroku-buildpack-shell.git` in BuildPacks
 * Add `https://github.com/timanovsky/subdir-heroku-buildpack` in BuildPacks
+* Add `https://github.com/nitinhayaran/heroku-buildpack-angular-spa.git` in BuildPacks
 * Add `heroku/nodejs` in BuildPacks
 * Set Dyno command to `npm start`
 * Enable http seesion affinity using `heroku features:enable http-session-affinity -a snakeonlinemulti` 

@@ -2,13 +2,20 @@
   "name": "snakeonlinemulti-frontend",
   "version": "1.0.0",
   "description": "Game Frontend Layer",
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.11.3"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "http-server",
+    "serve": "ng serve",
     "build": "ng build --prod --base-href /snakeonlinemulti --deploy-url /snakeonlinemulti/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "preinstall": "npm install -g http-server",
+    "postinstall": "ng build --prod && mv dist/* ."
   },
   "private": true,
   "dependencies": {
