@@ -15,26 +15,32 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: install Node (v12)
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
+      # - name: install Node (v12)
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 12
           
-      - name: Install and Build Dependencies
-        run: |
-             cd ./client
-             npm install
+      # - name: Install and Build Dependencies
+      #   run: |
+      #        cd ./client
+      #        npm install
           
-      - name: Angular Compile
-        run: |
-             cd ./client
-             npm run build
+      # - name: Angular Compile
+      #   run: |
+      #        cd ./client
+      #        npm run build
+
+      # - name: Copy Helm Charts 
+      #   run: |
+      #        mv ./client/dist ./client-dist
+      #        mkdir ./client-dist/charts
+      #        cp -R ./charts/*.* ./client-dist/charts
 
       - name: Copy Helm Charts 
         run: |
-             mv ./client/dist ./client-dist
+             mkdir ./client-dist
              mkdir ./client-dist/charts
-             cp -R ./charts/*.* ./client-dist/charts
+             cp -R ./charts/*.* ./client-dist/charts      
 
       - name: Debug - List Folder Content
         run: |
