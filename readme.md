@@ -97,6 +97,14 @@ Installing Helm Chart (remote)
 [screenshoot1]: https://github.com/tursoft/snakeonlinemulti/blob/master/snake.gif?raw=true "Screenshoot"
 
 
+# Todos
+* Fix http-https websocket connection issue
+* or Auto deploy frontend to heroku
+* Review and fix dockerfile and helm chart
+* Fix Auto deploy to dockerhub
+* Test on kubernetes
+* Complete game logic
+
 # Roadmap
 * Multiplayer mode (over websockets / firebase)
 * Developing test scripts
