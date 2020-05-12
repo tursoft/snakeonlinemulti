@@ -1,5 +1,5 @@
 import { Command } from "@colyseus/command";
-import { GameState } from "../game/gameState";
+import { GameState } from "../game/GameState";
 import { MoveCommandArg, MoveDirectionEnum } from "./models/MoveCommandArg";
 import { CommandArg } from "./models/CommandArg";
 
