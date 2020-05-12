@@ -1,4 +1,9 @@
+# Check OS version
+echo "Client: Check OS version =============="
+cat /etc/os-release
+
 # Install Nodejs
+echo "Client: Install Nodejs =============="
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 apt install nodejs
 node --version
