@@ -15,10 +15,10 @@ Simple version of classical snake game that was popular in nokia phones in 2000s
 * Server (stats): https://snakeonlinemulti.herokuapp.com/stats
 
 # Technologies (app)
-* Angular (8+)
-* Typescript
+* Typescript (3.8+)
+* Angular (9+)
+* Angular Material (9+)
 * Javascript, html, css
-* Firebase
 * Colyseus (nodejs game server)
 * Express
 
