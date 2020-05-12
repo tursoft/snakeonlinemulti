@@ -1,6 +1,6 @@
 import { Command } from "@colyseus/command";
 import { GameState } from "../game/gameState";
-import { MoveCommandArg, MoveDirectionEnum } from "./models/moveCommandArg";
+import { MoveCommandArg, MoveDirectionEnum } from "./models/MoveCommandArg";
 import { CommandArg } from "./models/CommandArg";
 
 export class MoveCommand extends Command<GameState, CommandArg<MoveCommandArg>> {  

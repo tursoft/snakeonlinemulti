@@ -1,13 +1,14 @@
 import { Room, Client } from "colyseus";
 import { Dispatcher, Command } from "@colyseus/command";
-import { GameState } from "./gameState";
-import { Player } from "./player";
-import { OnJoinCommand } from "../commands/onJoinCommand";
-import { OnLeaveCommand } from "../commands/onLeaveCommand";
+
+import { GameState } from "./GameState";
+import { Player } from "./Player";
+import { OnJoinCommand } from "../commands/OnJoinCommand";
+import { OnLeaveCommand } from "../commands/OnLeaveCommand";
 import { MoveCommand } from "../commands/MoveCommand";
-import { CommandArg } from "../commands/models/CommandArg";
 import { GetPlayersCommand } from "../commands/GetPlayersCommand";
-import { MoveCommandArg } from "../commands/models/moveCommandArg";
+import { CommandArg } from "../commands/models/CommandArg";
+import { MoveCommandArg } from "../commands/models/MoveCommandArg";
 
 export class GameRoom extends Room<GameState> {
   dispatcher = new Dispatcher(this);

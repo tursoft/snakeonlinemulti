@@ -1,6 +1,7 @@
 import { Command } from "@colyseus/command";
-import { GameState } from "../game/gameState";
-import { Player } from "../game/player";
+
+import { GameState } from "../game/GameState";
+import { Player } from "../game/Player";
 import { CommandArg } from "./models/CommandArg";
 
 export class GetPlayersCommand extends Command<GameState, CommandArg<void>> {
