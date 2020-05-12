@@ -19,11 +19,12 @@ app.use(cors({
 
 // app.use('/static', express.static(path.join(__dirname, 'public')))
 
-// app.get('/', function(req, res){
-//   res.sendfile('index.html', { root: __dirname + "/views/index.html" } );
-// });
+app.get('/', function(req, res){
+  res.sendfile('index.html', { root: __dirname + "/views" } );
+});
 
-app.use('/', express.static(__dirname + 'views', { index: "index.html" }));
+console.log("index.html => " + __dirname + 'views/index.html');
+// app.use('/', express.static(__dirname + 'views', { index: "index.html" }));
 
 app.use(express.json())
 
