@@ -6,13 +6,17 @@ import { monitor } from "@colyseus/monitor";
 import { matchMaker } from "colyseus"
 // import socialRoutes from "@colyseus/social/express"
 
+var clientUrlLocal = 'localhost:4200';
+var clientUrlRemote = 'https://snakeonlinemulti.herokuapp.com';
+var clientUrls = [clientUrlLocal, clientUrlRemote];
+
 import { GameRoom } from "./game/GameRoom";
 
 const port = Number(process.env.PORT || 2567);
 const app = express()
 
 app.use(cors({
-  origin: ['localhost:4200', 'https://tursoft.github.io', 'http://snakeonlinemulti.herokuapp.com']
+  origin: clientUrls
 }));
 
 app.get('/', function(req, res){
