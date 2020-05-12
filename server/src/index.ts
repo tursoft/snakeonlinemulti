@@ -15,7 +15,11 @@ app.use(cors({
   origin: ['localhost:4200', 'https://tursoft.github.io']
 }));
 
-app.use(express.static('views'))
+// app.use(express.static('views'))
+// app.use('/static', express.static(path.join(__dirname, 'public')))
+app.get('/', function(req, res){
+  res.sendfile('index.html', { root: __dirname + "/views/index.html" } );
+});
 app.use(express.json())
 
 const server = http.createServer(app);
