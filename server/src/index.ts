@@ -23,7 +23,7 @@ app.get('/', function(req, res){
   res.sendfile('index.html', { root: __dirname + "/views" } );
 });
 
-console.log("index.html => " + __dirname + 'views/index.html');
+console.log("index.html => " + __dirname + '/views/index.html');
 // app.use('/', express.static(__dirname + 'views', { index: "index.html" }));
 
 app.use(express.json())
