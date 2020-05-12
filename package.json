@@ -15,9 +15,5 @@
   "dependencies": {
     "i": "^0.3.6",
     "npm": "^6.14.5"
-  },
-  "devDependencies": {
-    "@types/ts-nameof": "^4.2.1",
-    "ts-nameof": "^4.2.2"
   }
 }
