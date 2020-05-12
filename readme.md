@@ -117,7 +117,11 @@ Installing Helm Chart (remote)
 * configure auto execution of tests on deployments
 * add "goals" section to summarize goal of this repository
 * add tagging-versionning support
-
+* server: extract parameters from source code
+* client & server: set parameters on heroku
+* add google analytics
+* client & server: add log integration
+* client & server: metrics integration
 
 # Roadmap
 * Multiplayer mode (over websockets / firebase)
