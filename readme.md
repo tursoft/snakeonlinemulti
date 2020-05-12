@@ -104,6 +104,9 @@ Installing Helm Chart (remote)
 * Fix Auto deploy to dockerhub
 * Test on kubernetes
 * Complete game logic
+* Add tests for client and server layers
+* Configure auto execution of tests on deployments
+* Add "goals" section to summarize goal of this repository
 
 # Roadmap
 * Multiplayer mode (over websockets / firebase)
