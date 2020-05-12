@@ -106,6 +106,8 @@ Installing Helm Chart (remote)
 
 
 # Todos
+* create seperate release branch
+* create seperate development branch
 * fix dockerfiles
 * fix helm charts
 * fix dockerhub auto deploy pipeline
