@@ -93,6 +93,12 @@ Installing Helm Chart (remote)
 * Monitor activity section for build logs
 
 
+# CI Design
+* Heroku auto deploy client layer
+* Heroku auto deploy server layer
+* Git Actions auto deploy help charts to Git Pages
+* Dockerhub auto create images and deploy to dockerhub (need to be fixed!)
+
 # Screenshoot
 ![Screenshoot][screenshoot1]
 
@@ -100,16 +106,15 @@ Installing Helm Chart (remote)
 
 
 # Todos
-* Fix http-https websocket connection issue
-* or Auto deploy frontend to heroku
-* Review and fix dockerfile and helm chart
-* Fix Auto deploy to dockerhub
-* Test on kubernetes
-* Complete game logic
-* Add tests for client and server layers
-* Configure auto execution of tests on deployments
-* Add "goals" section to summarize goal of this repository
-* Add tagging-versionning support
+* fix dockerfiles
+* fix helm charts
+* fix dockerhub auto deploy pipeline
+* test on kubernetes
+* complete game logic
+* add tests for client and server layers
+* configure auto execution of tests on deployments
+* add "goals" section to summarize goal of this repository
+* add tagging-versionning support
 
 
 # Roadmap
