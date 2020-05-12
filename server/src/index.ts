@@ -23,7 +23,7 @@ app.use(cors({
 //   res.sendfile('index.html', { root: __dirname + "/views/index.html" } );
 // });
 
-app.use('/', express.static('views', {index: "index.html"}));
+app.use('/', express.static(__dirname + 'views', { index: "index.html" }));
 
 app.use(express.json())
 
@@ -46,7 +46,7 @@ gameServer.define('gameRoom', GameRoom);
 // app.use("/", socialRoutes);
 
 // register colyseus monitor AFTER registering your room handlers
-app.use("/colyseus", monitor());
+app.use("/stats", monitor());
 
 gameServer.listen(port);
 console.log(`Listening Snake OnlineMulti Game Server on ws://localhost:${ port }`)

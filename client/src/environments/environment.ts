@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   serverUrl: 'ws://localhost:2567',
-  serverMonitorUrl: 'http://localhost:2567/colyseus'
+  serverMonitorUrl: 'http://localhost:2567/stats'
 };
 
 /*
