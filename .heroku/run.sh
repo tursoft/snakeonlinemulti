@@ -4,8 +4,11 @@ cat /etc/os-release
 
 # Install Nodejs
 echo "Client: Install Nodejs =============="
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-apt install nodejs
+curl -sL https://deb.nodesource.com/setup_12.x | -E bash -
+apt-get update
+apt install -y nodejs
+
+echo "Client: Node and Npm Versions =============="
 node --version
 npm --version
 
