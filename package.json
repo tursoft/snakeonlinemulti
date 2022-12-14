@@ -4,7 +4,7 @@
   "description": "Simple snake game using html Canvas",
   "repository": "github:tursoft/snakeonlinemulti",
   "scripts": {
-    "build": "cd ./frontend & ng build --prod",
+    "build": "cd ./client & ng build --prod",
     "start": "cd ./client & npm run start",
 
     "frontend": "cd ./client & npm run start",
