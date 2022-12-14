@@ -5,6 +5,7 @@
   "repository": "github:tursoft/snakeonlinemulti",
   "scripts": {
     "start": "cd ./frontend & npm run start",
+    "build": "cd ./frontend & ng build --prod",
     "frontend": "cd ./frontend & npm run start",
     "backend": "cd ./backend & npm run start",
     "all": "cd ./frontend & npm run start; cd ./backend & npm run start",
