@@ -4,10 +4,14 @@
   "description": "Simple snake game using html Canvas",
   "repository": "github:tursoft/snakeonlinemulti",
   "scripts": {
+    "build": "cd ./frontend & ng build --prod",
     "start": "cd ./client & npm run start",
+
     "frontend": "cd ./client & npm run start",
     "backend": "cd ./server & npm run start",
+    
     "all": "cd ./client & npm run start; cd ./server & npm run start",
+    
     "helm": "helm package ./charts/snakeonlinemulti -d ./charts",
     "helm-install": "helm install snakeonlinemulti ./charts/snakeonlinemulti-1.0.0.tgz"
   },
