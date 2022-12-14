@@ -10,7 +10,7 @@
     "ng": "ng",
     "start": "http-server",
     "serve": "ng serve",
-    "build-local": "ng build --prod",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
