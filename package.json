@@ -4,6 +4,7 @@
   "description": "Simple snake game using html Canvas",
   "repository": "github:tursoft/snakeonlinemulti",
   "scripts": {
+    "start": "cd ./frontend & npm run start",
     "frontend": "cd ./frontend & npm run start",
     "backend": "cd ./backend & npm run start",
     "all": "cd ./frontend & npm run start; cd ./backend & npm run start",
