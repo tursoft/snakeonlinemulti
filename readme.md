@@ -3,8 +3,10 @@ Enjoy like in your childhood!
 Simple version of classical snake game that was popular in nokia phones in 2000s.
 
 # Author
-* Muhammet Turşak - Senior Software Architect (tursoft@gmail.com)
+* Muhammet Turşak
+* Senior Software Architect
 * http://tursoft.net
+* tursoft@gmail.com
 
 # Status
 ![Build and Deploy](https://github.com/tursoft/snakeonlinemulti/workflows/Build%20and%20Deploy/badge.svg?branch=master)
@@ -135,3 +137,4 @@ Installing Helm Chart (remote)
 * Leadership board
 * Save & Resume support
 * Challenges
+
